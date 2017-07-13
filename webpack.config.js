@@ -3,7 +3,7 @@ const path = require('path')
 const WebpackNotifierPlugin = require('webpack-notifier')
 
 module.exports = {
-  devtool: 'eval',
+  devtool: 'source-map',
   entry: [
     'index.tsx'
   ],
@@ -25,7 +25,7 @@ module.exports = {
     },
   },
   resolve: {
-    extensions: ['.ts', '.tsx', '.js', '.jsx'],
+    extensions: ['.ts', '.tsx', '.js', '.jsx', '.json'],
     modules: ['src', 'node_modules'],
   },
   module: {
