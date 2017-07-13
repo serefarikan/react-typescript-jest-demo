@@ -3,7 +3,7 @@ const path = require('path')
 const WebpackNotifierPlugin = require('webpack-notifier')
 
 module.exports = {
-  devtool: 'source-map',
+  devtool: 'inline-source-map',
   entry: [
     'index.tsx'
   ],
